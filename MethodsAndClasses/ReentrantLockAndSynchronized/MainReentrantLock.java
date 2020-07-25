@@ -1,11 +1,9 @@
-//sample One, using ReentrantLock class
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Main {
+public class MainReentrantLock {
 
     public static final String EOF = "EOF";
 
@@ -104,7 +102,7 @@ class MyConsumer implements Runnable {
                 bufferLock.unlock();
                 continue;
             }
-            if (buffer.get(0).equals(Main.EOF)) {
+            if (buffer.get(0).equals(MainReentrantLock.EOF)) {
                 System.out.println(color + "exiting");
                 bufferLock.unlock();
                 break;
@@ -115,3 +113,7 @@ class MyConsumer implements Runnable {
         }
     }
 }
+
+
+
+
