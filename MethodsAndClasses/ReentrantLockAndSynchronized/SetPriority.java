@@ -18,7 +18,11 @@ public class Main {
 
         /* using the setPriority() method, is your way of giving the JVM a suggestion
         * its not actually binding in any way we can never force the
-        * OS to run threads in a specific order */
+        * OS to run threads in a specific order 
+        * 
+        * to whoever is reading this code, just know that everytime you run this code
+        * you'll always get different results / different order, even with us giving
+        * the OS a suggestion */
 
     }
 
