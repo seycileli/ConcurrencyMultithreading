@@ -86,3 +86,14 @@ Which will look like the code below.
 			System.out.println("InterruptedException caught")
 		}
 	}
+
+===========================
+
+regarding variable -
+
+boolean status = false;
+
+Since status variable is a local variable, it's already Thread safe.
+Local variables are stored in a Thread Stack. Therefore each Thread will
+have it's own copy. Threads wont interfere with each other when it comes to
+setting and getting the status value.
